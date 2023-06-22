@@ -29,7 +29,7 @@
     }
 </style>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="0">
     <section class="section-content bg-custom">
         <div class="col-3 contact-item mx-5">
             <div class="row justify-content-start">
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-sm-auto">
                     <hr>
-                    <nav class="navbar navbar-expand-lg bg-light">
+                    <nav class="navbar navbar-expand-lg bg-light" id="navbar">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="#">Home</a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                                <a class="nav-link active" aria-current="page" href="#about-us">About</a>
                               </li>
                               <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,9 +94,9 @@
             </div>
         </div>
     </div>
-    <div class="main-section text-center bg-custombodybg">
-        <h2>Gourmet Delights offers delicious treats for all occasions</h2>
-        <h1>Let us Cater your Event!</h1>
+    <div class="main-section bg-custombodybg">
+        <h2 class="text-center">Gourmet Delights offers delicious treats for all occasions</h2>
+        <h1 class="text-center mt-5">Let us Cater your Event!</h1>
         <div class="text-center p-3 m-2">
             <p>From intimate gatherings to large corporate events, our team of experienced chefs and waiters specialize in creating a custom catering experience to make your event unforgettable.</p>
         </div>
@@ -108,7 +108,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title d-block mx-auto" id="contactModalLabel">Contact Form</h5>
+                        <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -329,13 +329,121 @@
             </div>
             </div>
         </div>
+    </section>
+    <section class="contact-person bg-custom">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Events</h1>
+                <div class="col-md-6 bg-custombodybg">
+                    <img src="" alt="Contact Image">
+                </div>
+                <div class="col-md-6">
+                    <h2>Vincent Domo</h2>
+                    <p>From low-key neighborhood gatherings to large corporate events—Gourmet Delights isn't just a catering service, it's an experience that you deserve to enjoy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+        <div class="col md-6">
+            <h3>Flavor</h3>
+            <p>At Gourmet Delights, our chefs provide delicious and innovative cuisine that is sure to tantalize the taste buds. You are sure to be impressed and delighted with the great food you and your guests will experience.</p>
+            <div class="container text-center">
+                <button type="button" class="btn btn-dark mb-3" data-toggle="modal" data-target="#contactModal"> Try Now!</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="" alt="Image1">
+        </div>
+        </div>
+    </div>
+    </section>
+    <section class="contact-person bg-custom mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center mt-3 mb-3">Flavor</h1>
+                <div class="col bg-custombodybg">
+                    <img src="" alt="Contact Image">
+                </div>
+                <div class="col-md-6">
+                    <p>At Gourmet Delights, our chefs provide delicious and innovative cuisine that is sure to tantalize the taste buds. You are sure to be impressed and delighted with the great food you and your guests will experience.</p>
+                </div>
+            </div>
+        </div>
+        <section class="border border-3  border-opacity-50 mt-5 mb-5">
+        <div class="container d-flex justify-content-evenly">
+            <div class="container">
+                <div class="row border bg-light rounded-pill text-center">
+                    <div class="col mt-3 rounded-pill text-center">
+                        <h3> Quality</h3>
+                        <p>Gourmet Delights is always ready to exceed your expectations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row border bg-light rounded-pill text-center">
+                    <div class="col mt-3 rounded-pill text-center">
+                        <h3> Variety</h3>
+                        <p>We make sure to use only the freshest ingredients to create culinary masterpieces.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row border bg-light rounded-pill text-center">
+                    <div class="col mt-3 rounded-pill text-center">
+                        <h3>Service</h3>
+                        <p>We'll provide everything you need to make your event a success.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </section> 
+        <!--Sub-Footer Section-->
+        <section class="sub-footer d-flex justify-content-evenly mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div="col">
+                        <h3>Gourmet Delights</h3>
+                    <p> Avida Prime Taft, Taft Avenue, Pasay City, Phillippines</p>
+                    </div>
+                </div>
+
+            <nav class="navbar">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col list-group">
+                            <a href="#" class="ist-group-item list-group-item-action nav-link">Home</a>
+                            <a href="#" class="ist-group-item list-group-item-action nav-link">About</a>
+                            <a href="#" class="ist-group-item list-group-item-action nav-link">Menu</a>
+                            <a href="#" class="ist-group-item list-group-item-action nav-link">Services</a>
+                        </div>
+                    </div>
+                </div> 
+            </nav>    
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col">
+                            <h5> Subscribe Now!</h5>
+                            <p> Sign up for exclusive discount offers and updates on our latest menu</p>
+                        </div>
+                        <form class="d-flex" role="input">
+                            <input class="form-control me-2" type="input" placeholder="email address" aria-label="email address">
+                            <button class="btn btn-outline-success bg-dark" type="submit">Go!</button>
+                        </form>
+                    </div>
+                </div>    
+        </section>
 
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
 
 </body>
-
 </html>
