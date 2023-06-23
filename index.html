@@ -11,11 +11,11 @@
 
 <style>
     .bg-custom {
-        background-color: #f38701ff;
+        background: linear-gradient(#F7A400, #f38701ff);
     }
 
     .bg-custombodybg {
-        background: linear-gradient( to bottom right, #F37413, #F38701, #F7A400, #616D3D, #2F4D2A);;
+        background: linear-gradient( #F37413, #F38701, #F7A400 , #FFFFFF);
     }
 
     .custom-size {
@@ -31,12 +31,11 @@
 
 <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="0">
     <section class="section-content bg-custom">
-        <div class="col-3 contact-item mx-5">
+        <div class="col contact-item mx-5">
             <div class="row justify-content-start">
                 <ul class="contact-details d-flex bg-transparent justify-content-between mt-1">
-                    <a class="contact-number border border-light rounded p-2 hover" href="#">+63 966 288 3710</a>
-                    <a class="contact-email border border-light rounded p-2 hover"
-                        href="#">gourmet.delights@gmail.com</a>
+                    <p class="contact-number text-white mx-3">+63 966 288 3710</p>
+                    <p class="contact-email text-white mx-3">gourmet.delights@gmail.com</p>
                 </ul>
             </div>
         </div>
@@ -48,8 +47,7 @@
                     <img src="./logo.png" alt="website-logo" class="img-fluid logo-img custom-size">
                 </div>
                 <div class="col-sm-auto">
-                    <hr>
-                    <nav class="navbar navbar-expand-lg bg-light" id="navbar">
+                    <nav class="navbar navbar-expand-lg bg-custom" id="navbar">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="#">Home</a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,12 +76,12 @@
                                   Services
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="cateringModal">Catering Services</a></li>  
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="platedModal">Plated Services</a></li>  
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="semiSilverModal">Semi Silver Services</a></li> 
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="fullSilverModal">Full Silver Services</a></li> 
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="gueridonModal">Gueridon Services</a></li>   
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="buffetModal">Buffet Services</a></li>  
+                                    <li><a class="dropdown-item" href="#">Catering Services</a></li>  
+                                    <li><a class="dropdown-item" href="#">Plated Services</a></li>  
+                                    <li><a class="dropdown-item" href="#">Semi Silver Services</a></li> 
+                                    <li><a class="dropdown-item" href="#">Full Silver Services</a></li> 
+                                    <li><a class="dropdown-item" href="#">Gueridon Services</a></li>   
+                                    <li><a class="dropdown-item" href="#">Buffet Services</a></li>  
                                 </ul>
                               </li>
                             </ul>
@@ -91,111 +89,23 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <p class="text-center">Delight Gourmet, your premier destination for exquisite catering services. We bring culinary mastery and impeccable attention to detail to every event, ensuring a delightful experience that exceeds expectations. From corporate gatherings to intimate celebrations, our expert team crafts personalized menus, using the finest ingredients and innovative techniques, to create culinary wonders that tantalize the taste buds. With Delight Gourmet, let us transform your special occasion into an unforgettable gastronomic journey.</p>
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="cateringModalLabel">Catering Services</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="cateringModalLabel">Catering Services</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
                                         <img src="catering-services1.jpeg" alt="Catering Services"/>
                                         <img src="catering-services2.jpeg" alt="Catering Services"/>
                                         <img src="catering-services3.jpeg" alt="Catering Services"/>
                                         <img src="catering-services4.jpeg" alt="Catering Services"/>
                                         <img src="catering-services5.jpeg" alt="Catering Services"/>
-                                      </div>
-                                      <div class="modal-footer">
+                                    </div>
+                                    <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="platedModal" tabindex="-1" aria-labelledby="platedModal" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <p class="text-center"></p>
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="platedModalLabel">Plated Services</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="plated1.jpeg" alt="Plated Services"/>
-                                        <img src="plated2.jpeg" alt="Plated Services"/>
-                                        <img src="plated3.jpeg" alt="Plated Services"/>
-                                        <img src="plated4.jpeg" alt="Plated Services"/>
-                                        <img src="plated5.jpeg" alt="Plated Services"/>
-                                        <img src="plated6.jpeg" alt="Plated Services"/>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      </div>
-                                    </div>
-                                </div>
-                          </div>
-                          <div class="modal fade" id="platedModal" tabindex="-1" aria-labelledby="platedModal" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <p class="text-center"></p>
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="platedModalLabel">Plated Services</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="plated1.jpeg" alt="Plated Services"/>
-                                    <img src="plated2.jpeg" alt="Plated Services"/>
-                                    <img src="plated3.jpeg" alt="Plated Services"/>
-                                    <img src="plated4.jpeg" alt="Plated Services"/>
-                                    <img src="plated5.jpeg" alt="Plated Services"/>
-                                    <img src="plated6.jpeg" alt="Plated Services"/>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
                             </div>
-                      </div>
-                      <div class="modal fade" id="platedModal" tabindex="-1" aria-labelledby="platedModal" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <p class="text-center"></p>
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="platedModalLabel">Plated Services</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <img src="plated1.jpeg" alt="Plated Services"/>
-                                <img src="plated2.jpeg" alt="Plated Services"/>
-                                <img src="plated3.jpeg" alt="Plated Services"/>
-                                <img src="plated4.jpeg" alt="Plated Services"/>
-                                <img src="plated5.jpeg" alt="Plated Services"/>
-                                <img src="plated6.jpeg" alt="Plated Services"/>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="platedModal" tabindex="-1" aria-labelledby="platedModal" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <p class="text-center"></p>
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="platedModalLabel">Plated Services</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <img src="plated1.jpeg" alt="Plated Services"/>
-                                <img src="plated2.jpeg" alt="Plated Services"/>
-                                <img src="plated3.jpeg" alt="Plated Services"/>
-                                <img src="plated4.jpeg" alt="Plated Services"/>
-                                <img src="plated5.jpeg" alt="Plated Services"/>
-                                <img src="plated6.jpeg" alt="Plated Services"/>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                        </div>
-                  </div>
                         </div>
                       </nav>
                 </div>
@@ -446,7 +356,7 @@
                     <img src="" alt="Contact Image">
                 </div>
                 <div class="col-md-6">
-                    <h2>Vincent Domo</h2>
+                    <h2>Mao</h2>
                     <p>From low-key neighborhood gatherings to large corporate events—Gourmet Delights isn't just a catering service, it's an experience that you deserve to enjoy.</p>
                 </div>
             </div>
