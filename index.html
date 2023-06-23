@@ -27,6 +27,10 @@
         width: 500px; 
         height: auto; 
     }
+
+    .section-height{
+        height: 300px
+    }
 </style>
 
 <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="0">
@@ -255,12 +259,10 @@
         </div>
     </section>
     <!-- Why US Section-->
-
     <section id="about-us fluid bg-light">
         <div class="about-section text-center p-5 mt-5 mb-5">
             <h1>Why Us?</h1>
         </div>
-
         <div class="container">
             <div class="row">
             <div class="col md-6">
@@ -268,7 +270,10 @@
                 <p>Our team of talented chefs is dedicated to crafting exquisite dishes that tantalize the taste buds. From elegant appetizers to delectable main courses and mouthwatering desserts, we combine culinary expertise with creativity to create unforgettable dining experiences.</p>
             </div>
             <div class="col-md-6">
-                <img src="" alt="Image1">
+                <video width="640" height="360" controls>
+                    <source src="culinary-experience.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             </div>
         </div>
@@ -276,10 +281,12 @@
         <div class="container">
             <div class="row">
             <div class="col-md-6">
-                 <img src="" alt="Image1">
+                <video width="640" height="360" controls>
+                    <source src="fresh-ingredients.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             </div>   
-
             <div class="col md-6">
                 <h3>Fresh and High-Quality Ingredients</h3>
                 <p>We believe that great food starts with the finest ingredients. That's why we source only the freshest and highest quality ingredients, ensuring that every dish we create is bursting with flavor and made with love.</p>
@@ -390,7 +397,7 @@
                 </div>
             </div>
         </div>
-        <section class="border border-3  border-opacity-50 mt-5 mb-5">
+        <section class="mt-5 mb-5 section-height">
         <div class="container d-flex justify-content-evenly">
             <div class="container">
                 <div class="row border bg-light rounded-pill text-center">
@@ -400,7 +407,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="row border bg-light rounded-pill text-center">
                     <div class="col mt-3 rounded-pill text-center">
@@ -409,7 +415,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="row border bg-light rounded-pill text-center">
                     <div class="col mt-3 rounded-pill text-center">
@@ -420,6 +425,96 @@
             </div>
         </div> 
         </section> 
+        <!--Gallery Services Section-->
+        <section id="gallery">
+            <div class="container">
+                <h2 class="text-center mb-5">Services</h2>
+                <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="1"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Catering Services</h3>
+                                    <p>Delight Gourmet, your premier destination for exquisite catering services. We bring culinary mastery and impeccable attention to detail to every event, ensuring a delightful experience that exceeds expectations. From corporate gatherings to intimate celebrations, our expert team crafts personalized menus, using the finest ingredients and innovative techniques, to create culinary wonders that tantalize the taste buds. With Delight Gourmet, let us transform your special occasion into an unforgettable gastronomic journey.</p>
+                                </div>
+                                <div class="col md-6 d-flex justify-content-center align-items-center">
+                                    <img src="Catering-services-image.jpeg" alt="CateringServices2" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Plated Services</h3>
+                                    <p>Delight Gourmet's Plated Service, where culinary excellence meets convenience. Indulge in a remarkable dining experience from the comfort of your own home, as our skilled chefs meticulously prepare and artfully present each dish. With a fusion of exquisite flavors and impeccable presentation, our Plated Service delivers a feast for the senses, allowing you to savor every moment without the hassle of cooking. Elevate your dining occasions with Delight Gourmet's Plated Service and let us redefine the way you enjoy fine cuisine.</p>
+                                </div>
+                                <div class="col md-6 d-flex justify-content-center align-items-center">
+                                    <img src="Plated-Images.jpeg" alt="Plated Services" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Semi-Silver Services</h3>
+                                    <p>Experience the epitome of refined dining with Delight Gourmet's Semi-Silver Service. Immerse yourself in an ambiance of elegance as our attentive staff caters to your every need, blending seamless service with the artistry of gastronomy. From the carefully curated menu to the graceful tableside preparations, our Semi-Silver Service ensures a truly memorable dining affair. Enjoy the perfect balance between sophistication and comfort, as we bring a touch of grandeur to your table while preserving the warmth of shared moments. Discover a new level of culinary indulgence with Delight Gourmet's Semi-Silver Service, where impeccable service meets culinary mastery.</p>
+                                </div>
+                                <div class="col md-6 d-flex justify-content-center align-items-center">
+                                    <img src="Silver-Services.jpeg" alt="Semi-SilverServices1" class="img-fluid max-he">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Full Silver Services</h3>
+                                    <p>Welcome to a world of opulence and refined dining with Delight Gourmet's Full-Silver Service. Immerse yourself in a symphony of sophistication as our highly skilled team orchestrates a culinary experience beyond compare. From the meticulously crafted gourmet menu to the flawless execution of intricate tableside preparations, every detail is designed to transport you to the realm of culinary excellence. Indulge in unrivaled luxury as our silver-service-trained staff caters to your every whim, ensuring an unforgettable gastronomic journey. Elevate your dining occasions to new heights with Delight Gourmet's Full-Silver Service, where timeless elegance and unparalleled culinary craftsmanship converge for an extraordinary dining experience.</p>
+                                </div>
+                                <div class="col md-6 d-flex justify-content-center align-items-center">
+                                    <img src="Full-services-Image.jpeg" alt="Full Silver Services" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Gueridon Services</h3>
+                                    <p>Introducing Delight Gourmet's Gueridon Service, where culinary artistry takes center stage. Immerse yourself in a captivating dining experience as our skilled chefs create masterpieces right before your eyes. Witness the skillful techniques and flair as dishes are expertly prepared tableside, showcasing the art of gastronomy in its purest form. With a seamless blend of showmanship and exquisite flavors, our Gueridon Service offers a feast for the senses, igniting your passion for culinary excellence. Elevate your dining moments to extraordinary heights with Delight Gourmet's Gueridon Service and embark on a culinary journey like no other.</p>
+                                </div>
+                                <div class="col md-6 d-flex justify-content-center align-items-center">
+                                    <img src="Gueridon.jpeg" alt="Gueridon Services" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Buffet Services</h3>
+                                    <p>Delight Gourmet presents the epitome of culinary variety and indulgence with our Buffet Service. Immerse yourself in a gastronomic wonderland, where an array of delectable dishes awaits. From international delicacies to local favorites, our extensive buffet offers something to please every palate. Indulge in unlimited options, meticulously prepared by our talented chefs, and savor the freedom to create your own culinary adventure. With impeccable presentation and a focus on quality, our Buffet Service guarantees a memorable dining experience for any occasion. Discover a world of flavors and embark on a delightful journey of taste with Delight Gourmet's exceptional Buffet Service.</p>
+                                </div>
+                                <div class="col md-6 d-flex justify-content-center align-items-center">
+                                    <img src="Buffet-Image.jpeg" alt="Buffet Services" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!--Sub-Footer Section-->
         <section class="sub-footer d-flex justify-content-evenly mt-5 mb-5">
             <div class="container">
