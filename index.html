@@ -6,7 +6,7 @@
     <title>Gourmet Delights Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
 </head>
 
 <style>
@@ -35,23 +35,24 @@
 
 <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="0">
     <section class="section-content bg-custom">
-        <div class="col contact-item mx-5">
-            <div class="row justify-content-start">
-                <ul class="contact-details d-flex bg-transparent justify-content-between mt-1">
-                    <p class="contact-number text-white mx-3">+63 966 288 3710</p>
-                    <p class="contact-email text-white mx-3">gourmet.delights@gmail.com</p>
-                </ul>
+        <div class="col-sm-12 col-md-6 d-flex justify-content-between">
+            <div class="row">
+                <div class="contact-details d-flex bg-transparent justify-content-between my-3">
+                    <div><i class="fas fa-envelope"></i>marketing@gourmetdelight.com  
+                    <i class="fas fa-phone"></i>+63 966 288 3710</div>
+                </div>
             </div>
         </div>
     </section>
-    <div class="header-content-fluid bg-custom">
+    <section id="home">
+    <div class="header-content-fluid">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="col-sm-auto">
                     <img src="./logo.png" alt="website-logo" class="img-fluid logo-img custom-size">
                 </div>
                 <div class="col-sm-auto">
-                    <nav class="navbar navbar-expand-lg bg-custom" id="navbar">
+                    <nav class="navbar navbar-expand-lg" id="navbar">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="#">Home</a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,32 +61,24 @@
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#about-us">About</a>
+                                <a class="nav-link active" aria-current="page" href="#about">About</a>
                               </li>
                               <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Menu
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Appetizer</a></li>
-                                  <li><a class="dropdown-item" href="#">Salads</a></li>
-                                  <li><a class="dropdown-item" href="#">Main Course</a></li>
-                                  <li><a class="dropdown-item" href="#">Sides</a></li>
-                                  <li><a class="dropdown-item" href="#">Dessert</a></li>
-                                  <li><a class="dropdown-item" href="#">Beverages</a></li>
-                                </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#menu-list">Menu</a>
+                                  </li>
                               </li>
                               <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   Services
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Catering Services</a></li>  
-                                    <li><a class="dropdown-item" href="#">Plated Services</a></li>  
-                                    <li><a class="dropdown-item" href="#">Semi Silver Services</a></li> 
-                                    <li><a class="dropdown-item" href="#">Full Silver Services</a></li> 
-                                    <li><a class="dropdown-item" href="#">Gueridon Services</a></li>   
-                                    <li><a class="dropdown-item" href="#">Buffet Services</a></li>  
+                                    <li><a class="dropdown-item" href="#services">Catering Services</a></li>  
+                                    <li><a class="dropdown-item" href="#services">Plated Services</a></li>  
+                                    <li><a class="dropdown-item" href="#services">Semi Silver Services</a></li> 
+                                    <li><a class="dropdown-item" href="#services">Full Silver Services</a></li> 
+                                    <li><a class="dropdown-item" href="#services">Gueridon Services</a></li>   
+                                    <li><a class="dropdown-item" href="#services">Buffet Services</a></li>  
                                 </ul>
                               </li>
                             </ul>
@@ -211,17 +204,16 @@
             </button>
         </div>
     </div>
-
-    <!--About Section-->
-
-    <section id="about-us fluid bg-custom">
+</section>
+<!--About Section-->
+<section id="about">
+    <section class="fluid bg-custom">
         <div class="about-section text-center p-5 mt-5 mb-5 bg-custom">
             <h1>What We Offer</h1>
             <p>Gourmet Delights provides catering services to suit every occasion. We bring the best of flavor and elegance to ensure your special day or night is nothing short of memorable.</p>
             <div class="row align-items-end bg-custom  mt-4">
                 <div class="col text-center">
                     <div class="card d-flex justify-content-center" style="width: 18rem;">
-                        <i class="fa-regular fa-money-bill-1 fa-shake fa-xl"></i>
                         <div class="card-body">
                           <h5 class="card-title">Fresh</h5>
                           <p class="card-text">Our chefs source only the finest ingredients, creating delectable dishes that you'll want to savor again and again!</p>
@@ -230,7 +222,6 @@
                 </div>
                 <div class="col text-center">
                     <div class="card d-flex justify-content-center" style="width: 18rem;">
-                        <i class="fas fa-money-bill"></i>
                         <div class="card-body">
                           <h5 class="card-title">Variety</h5>
                           <p class="card-text">Whatever your dietary needs, Gourmet Delights has something for everyone. Our menus are comprehensive and full of options.</p>
@@ -239,7 +230,6 @@
                 </div>
                 <div class="col text-center">
                     <div class="card d-flex justify-content-center" style="width: 18rem;">
-                        <i class="fas fa-money-bill"></i>
                         <div class="card-body">
                           <h5 class="card-title">Service</h5>
                           <p class="card-text">At Gourmet Delights, we take care of everything—from set up to clean up. All you have to do is show up and enjoy.</p>
@@ -248,7 +238,6 @@
                 </div>
                 <div class="col text-center">
                     <div class="card d-flex justify-content-center" style="width: 18rem;">
-                        <i class="fas fa-money-bill"></i>
                         <div class="card-body">
                           <h5 class="card-title">Convenience</h5>
                           <p class="card-text">We'll work with you to personalize a menu to fit both your tastes and budget. Plus, we deliver right to your door.</p>
@@ -259,144 +248,115 @@
         </div>
     </section>
     <!-- Why US Section-->
-    <section id="about-us fluid bg-light">
+    <section id="about" class="fluid bg-custombodybg">
         <div class="about-section text-center p-5 mt-5 mb-5">
             <h1>Why Us?</h1>
         </div>
         <div class="container">
             <div class="row">
-            <div class="col md-6">
+            <div class="col-lg-6 col-md-12 text-center py-5 my-5">
                 <h3>Culinary Experience</h3>
                 <p>Our team of talented chefs is dedicated to crafting exquisite dishes that tantalize the taste buds. From elegant appetizers to delectable main courses and mouthwatering desserts, we combine culinary expertise with creativity to create unforgettable dining experiences.</p>
             </div>
-            <div class="col-md-6">
-                <video width="640" height="360" controls>
+            <div class="col-lg-6 col-md-12">
+                <video width="640" height="360" controls style="border-radius: 10px;">
                     <source src="culinary-experience.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row">
-            <div class="col-md-6">
-                <video width="640" height="360" controls>
-                    <source src="fresh-ingredients.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            </div>   
-            <div class="col md-6">
-                <h3>Fresh and High-Quality Ingredients</h3>
-                <p>We believe that great food starts with the finest ingredients. That's why we source only the freshest and highest quality ingredients, ensuring that every dish we create is bursting with flavor and made with love.</p>
+                <div class="col-lg-6 col-md-12">
+                    <video width="640" height="360" controls style="border-radius: 10px;">
+                        <source src="fresh-ingredients.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>   
+                <div class="col-lg-6 col-md-12 text-center py-5 my-5">
+                    <h3>Fresh and High-Quality Ingredients</h3>
+                    <p>We believe that great food starts with the finest ingredients. That's why we source only the freshest and highest quality ingredients, ensuring that every dish we create is bursting with flavor and made with love.</p>
+                </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row">
-            <div class="col md-6">
+            <div class="col-lg-6 col-md-12 text-center py-5 my-5">
                 <h3>Customized Menus</h3>
                 <p>We understand that every event is unique, and that's why we offer customized menus tailored to your preferences. Whether you're planning an intimate gathering or a grand celebration, our culinary consultants work closely with you to design a menu that reflects your vision and exceeds your expectations.</p>
             </div>
-            <div class="col-md-6">
-                <img src="" alt="Image1">
-            </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-            <div class="col-md-6">
-                 <img src="" alt="Image1">
-            </div>
-            </div>   
-
-            <div class="col md-6">
-                <h3>Attention to Details</h3>
-                <p>From the initial consultation to the final bite, we pay meticulous attention to every detail. Our dedicated event planners will work closely with you to understand your requirements and execute your vision flawlessly, leaving no stone unturned in creating a memorable culinary experience.</p>
+            <div class="col-lg-6 col-md-12">
+                <video width="640" height="360" controls style="border-radius: 10px;">
+                    <source src="customized-menu-videos.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
-
-        <div class="container">
+        <div class="container align-items-center">
             <div class="row">
-            <div class="col md-6">
-                <h3>Professional and Friendly Staff</h3>
-                <p>Our team is not only highly skilled but also dedicated to providing exceptional service. With a warm and friendly demeanor, our staff members go above and beyond to ensure that your guests feel welcomed and attended to, making your event seamless and stress-free.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="" alt="Image1">
-            </div>
-            </div>
+                <div class="col-lg-12 text-center py-2 my-5">
+                    |<video width="640" height="360" controls style="border-radius: 10px;">
+                        <source src="delight-gourmet.mp4" type="video/mp4">
+                    </video>
+                </div>  
+            </div>    
         </div>
-
-        <div class="container">
+        <div class="container align-items-center mt-5">
             <div class="row">
-            <div class="col-md-6">
-                 <img src="" alt="Image1">
-            </div>
-            </div>   
-
-            <div class="col md-6">
-                <h3>Flexibility and Versatility</h3>
-                <p>Whether you're hosting a corporate gathering, a wedding reception, or a private party, we have the flexibility and versatility to cater to your specific needs. From elegant sit-down dinners to casual buffets, we can adapt our services to suit any occasion and any size of event.</p>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-            <div class="col md-6">
-                <h3>Exceptional Customer Satisfaction:</h3>
-                <p>Our top priority is your satisfaction. We take pride in consistently exceeding our clients' expectations, and our numerous positive reviews and testimonials are a testament to our commitment to delivering excellence in every aspect of our service.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="" alt="Image1">
-            </div>
+                <div class="col-lg-3 col-md-6 text-center my-2">
+                    <h3>Attention to Details</h3>
+                    <p >From the initial consultation to the final bite, we pay meticulous attention to every detail. Our dedicated event planners will work closely with you to understand your requirements and execute your vision flawlessly, leaving no stone unturned in creating a memorable culinary experience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center my-2">
+                    <h3>Professional and Friendly Staff</h3>
+                    <p>Our team is not only highly skilled but also dedicated to providing exceptional service. With a warm and friendly demeanor, our staff members go above and beyond to ensure that your guests feel welcomed and attended to, making your event seamless and stress-free.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center my-2">
+                    <h3>Flexibility and Versatility</h3>
+                    <p>Whether you're hosting a corporate gathering, a wedding reception, or a private party, we have the flexibility and versatility to cater to your specific needs. From elegant sit-down dinners to casual buffets, we can adapt our services to suit any occasion and any size of event.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center my-2">
+                    <h3>Exceptional Customer Satisfaction:</h3>
+                    <p>Our top priority is your satisfaction. We take pride in consistently exceeding our clients' expectations, and our numerous positive reviews and testimonials are a testament to our commitment to delivering excellence in every aspect of our service.</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="contact-person bg-custom">
         <div class="container">
             <div class="row">
-                <h1 class="text-center">Events</h1>
-                <div class="col-md-6 bg-custombodybg">
-                    <img src="" alt="Contact Image">
-                </div>
+                <h1 class="text-center  mb-5 py-3">Our Team</h1>
                 <div class="col-md-6">
-                    <h2>Mao</h2>
-                    <p>From low-key neighborhood gatherings to large corporate events—Gourmet Delights isn't just a catering service, it's an experience that you deserve to enjoy.</p>
+                    <video width="400" height="360" controls style="border-radius: 20px;">
+                        <source src="DeLight Gourmet Team.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-6 text-center my-5">
+                    <h4>From low-key neighborhood gatherings to large corporate events—Gourmet Delights isn't just a catering service, it's an experience that you deserve to enjoy.</h4>
                 </div>
             </div>
         </div>
     </section>
-
     <div class="container">
-        <div class="row">
-        <div class="col md-6">
-            <h3>Flavor</h3>
+        <div class="row align-items-center">
+        <div class="col md-6 text-center">
+            <h1>Flavor</h1>
             <p>At Gourmet Delights, our chefs provide delicious and innovative cuisine that is sure to tantalize the taste buds. You are sure to be impressed and delighted with the great food you and your guests will experience.</p>
             <div class="container text-center">
                 <button type="button" class="btn btn-dark mb-3" data-toggle="modal" data-target="#contactModal"> Try Now!</button>
             </div>
         </div>
         <div class="col-md-6">
-            <img src="" alt="Image1">
-        </div>
+            <div class="col text-center my-2">
+            |<video width="640" height="360" controls style="border-radius: 10px;">
+                <source src= "customized-menu-videos.mp4" type="video/mp4">
+            </video>
+        </div>          </div>
         </div>
     </div>
     </section>
-    <section class="contact-person bg-custom mt-5 mb-5">
-        <div class="container">
-            <div class="row">
-                <h1 class="text-center mt-3 mb-3">Flavor</h1>
-                <div class="col bg-custombodybg">
-                    <img src="" alt="Contact Image">
-                </div>
-                <div class="col-md-6">
-                    <p>At Gourmet Delights, our chefs provide delicious and innovative cuisine that is sure to tantalize the taste buds. You are sure to be impressed and delighted with the great food you and your guests will experience.</p>
-                </div>
-            </div>
-        </div>
+    <section class="contact-person my-5 py-3 bg-custombodybg">
         <section class="mt-5 mb-5 section-height">
         <div class="container d-flex justify-content-evenly">
             <div class="container">
@@ -424,9 +384,54 @@
                 </div>
             </div>
         </div> 
-        </section> 
+     </section> 
+</section>   
+        <section id="menu-list">
+            <div class="container">
+                <h1 class="text-center mb-5">Menu</h1>
+                <div class="row">
+                    <div class=" col-lg-4 col-md-6">
+                        <div class="menu-item">
+                            <img src="appetizers.jpg" alt="appetizers" class="img-fluid rounded">
+                            <h3 class="text-center">Appetizers</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6">
+                        <div class="menu-item">
+                            <img src="salads.jpg" alt="salads" class="img-fluid rounded">
+                            <h3 class="text-center">Salads</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6">
+                        <div class="menu-item">
+                            <img src="main-course.jpg" alt="main-course" class="img-fluid rounded">
+                            <h3 class="text-center">Main</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6">
+                        <div class="menu-item">
+                            <img src="sides.jpg" alt="sides" class="img-fluid rounded">
+                            <h3 class="text-center">Sides</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6">
+                        <div class="menu-item">
+                            <img src="desserts.jpg" alt="desserts" class="img-fluid rounded">
+                            <h3 class="text-center">Desserts</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6">
+                        <div class="menu-item">
+                            <img src="beverages.jpg" alt="beverages" class="img-fluid rounded">
+                            <h3 class="text-center">Beverages</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <!--Gallery Services Section-->
-        <section id="gallery">
+        <section id="services">
             <div class="container">
                 <h2 class="text-center mb-5">Services</h2>
                 <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
@@ -438,7 +443,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col">
+                                <div class="col text-center py-2 my-5">
                                     <h3>Catering Services</h3>
                                     <p>Delight Gourmet, your premier destination for exquisite catering services. We bring culinary mastery and impeccable attention to detail to every event, ensuring a delightful experience that exceeds expectations. From corporate gatherings to intimate celebrations, our expert team crafts personalized menus, using the finest ingredients and innovative techniques, to create culinary wonders that tantalize the taste buds. With Delight Gourmet, let us transform your special occasion into an unforgettable gastronomic journey.</p>
                                 </div>
@@ -449,18 +454,18 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col">
+                                <div class="col text-center py-2 my-5">
                                     <h3>Plated Services</h3>
                                     <p>Delight Gourmet's Plated Service, where culinary excellence meets convenience. Indulge in a remarkable dining experience from the comfort of your own home, as our skilled chefs meticulously prepare and artfully present each dish. With a fusion of exquisite flavors and impeccable presentation, our Plated Service delivers a feast for the senses, allowing you to savor every moment without the hassle of cooking. Elevate your dining occasions with Delight Gourmet's Plated Service and let us redefine the way you enjoy fine cuisine.</p>
                                 </div>
                                 <div class="col md-6 d-flex justify-content-center align-items-center">
-                                    <img src="Plated-Images.jpeg" alt="Plated Services" class="img-fluid">
+                                    <img src="Plated-Images.jpeg" alt="Plated Services" class="img-fluid" style="height: 450px">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col">
+                                <div class="col text-center py-2 my-5">
                                     <h3>Semi-Silver Services</h3>
                                     <p>Experience the epitome of refined dining with Delight Gourmet's Semi-Silver Service. Immerse yourself in an ambiance of elegance as our attentive staff caters to your every need, blending seamless service with the artistry of gastronomy. From the carefully curated menu to the graceful tableside preparations, our Semi-Silver Service ensures a truly memorable dining affair. Enjoy the perfect balance between sophistication and comfort, as we bring a touch of grandeur to your table while preserving the warmth of shared moments. Discover a new level of culinary indulgence with Delight Gourmet's Semi-Silver Service, where impeccable service meets culinary mastery.</p>
                                 </div>
@@ -471,7 +476,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col">
+                                <div class="col text-center py-2 my-5">
                                     <h3>Full Silver Services</h3>
                                     <p>Welcome to a world of opulence and refined dining with Delight Gourmet's Full-Silver Service. Immerse yourself in a symphony of sophistication as our highly skilled team orchestrates a culinary experience beyond compare. From the meticulously crafted gourmet menu to the flawless execution of intricate tableside preparations, every detail is designed to transport you to the realm of culinary excellence. Indulge in unrivaled luxury as our silver-service-trained staff caters to your every whim, ensuring an unforgettable gastronomic journey. Elevate your dining occasions to new heights with Delight Gourmet's Full-Silver Service, where timeless elegance and unparalleled culinary craftsmanship converge for an extraordinary dining experience.</p>
                                 </div>
@@ -482,7 +487,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col">
+                                <div class="col text-center py-2 my-5">
                                     <h3>Gueridon Services</h3>
                                     <p>Introducing Delight Gourmet's Gueridon Service, where culinary artistry takes center stage. Immerse yourself in a captivating dining experience as our skilled chefs create masterpieces right before your eyes. Witness the skillful techniques and flair as dishes are expertly prepared tableside, showcasing the art of gastronomy in its purest form. With a seamless blend of showmanship and exquisite flavors, our Gueridon Service offers a feast for the senses, igniting your passion for culinary excellence. Elevate your dining moments to extraordinary heights with Delight Gourmet's Gueridon Service and embark on a culinary journey like no other.</p>
                                 </div>
@@ -493,7 +498,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col">
+                                <div class="col text-center py-2 my-5">
                                     <h3>Buffet Services</h3>
                                     <p>Delight Gourmet presents the epitome of culinary variety and indulgence with our Buffet Service. Immerse yourself in a gastronomic wonderland, where an array of delectable dishes awaits. From international delicacies to local favorites, our extensive buffet offers something to please every palate. Indulge in unlimited options, meticulously prepared by our talented chefs, and savor the freedom to create your own culinary adventure. With impeccable presentation and a focus on quality, our Buffet Service guarantees a memorable dining experience for any occasion. Discover a world of flavors and embark on a delightful journey of taste with Delight Gourmet's exceptional Buffet Service.</p>
                                 </div>
@@ -516,23 +521,25 @@
         </section>
 
         <!--Sub-Footer Section-->
-        <section class="sub-footer d-flex justify-content-evenly mt-5 mb-5">
+        <section class="sub-footer d-flex justify-content-evenly bg-custombodybg mt-5 mb-5">
             <div class="container">
                 <div class="row">
-                    <div="col">
-                        <h3>Gourmet Delights</h3>
-                    <p> Avida Prime Taft, Taft Avenue, Pasay City, Phillippines</p>
+                    <div class="col">
+                        <h3><i class="fas fa-building"></i>Gourmet Delights</h3>
+                        <p><i class="fas fa-map-market-alt"></i> Avida Prime Taft, Taft Avenue, Pasay City, Phillippines</p>
+                        <p><i class="fas fa-envelope"></i>marketing@gourmetdelight.com</p>
+                        <p><i class="fas fa-phone"></i>+63 966 288 3710</p>
                     </div>
                 </div>
-
+            </div>    
             <nav class="navbar">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col list-group">
-                            <a href="#" class="ist-group-item list-group-item-action nav-link">Home</a>
-                            <a href="#" class="ist-group-item list-group-item-action nav-link">About</a>
-                            <a href="#" class="ist-group-item list-group-item-action nav-link">Menu</a>
-                            <a href="#" class="ist-group-item list-group-item-action nav-link">Services</a>
+                            <a href="#home" class="ist-group-item list-group-item-action nav-link">Home</a>
+                            <a href="#about-us" class="ist-group-item list-group-item-action nav-link">About</a>
+                            <a href="#menu-list" class="ist-group-item list-group-item-action nav-link">Menu</a>
+                            <a href="#services" class="ist-group-item list-group-item-action nav-link">Services</a>
                         </div>
                     </div>
                 </div> 
@@ -550,13 +557,25 @@
                     </div>
                 </div>    
         </section>
-
-    </section>
-
+    </section>   
+         <footer class="footer bg-custombodybg d-flex justify-content-end">
+            <div class="container">
+            <div class="row">
+                <div class="col social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col trademark">
+                &copy; 2023 Delight Gourmet. All rights reserved.
+                </div>
+            </div>
+            </div>
+        </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
-
 </body>
 </html>
